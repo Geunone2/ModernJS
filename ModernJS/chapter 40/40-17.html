@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<button>Click me !</button>
+<script>
+    const $button = document.querySelector('button');
+
+    const handleClick = () => console.log('button click');
+
+    $button.onclick = handleClick;
+
+    $button.removeEventListener('click', handleClick); // 실패
+
+    $button.onclick = null;
+</script>
+</body>
+</html>

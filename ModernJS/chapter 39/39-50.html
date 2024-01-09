@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+  <!-- beforebegin -->
+    <div id = "foo">
+  <!-- afterbegin -->
+    text
+  <!-- beforeend -->
+    </div>
+  <!-- afterend -->
+</body>
+  <script>
+    const $foo = document.getElementById('foo');
+
+    $foo.insertAdjacentElement('beforebegin', <p>beforebegin</p>);
+    $foo.insertAdjacentElement('afterbegin', <p>afterbegin</p>);
+    $foo.insertAdjacentElement('beforeend', <p>beforeend</p>);
+    $foo.insertAdjacentElement('afterend', <p>afterend</p>);
+  </script>
+</html>

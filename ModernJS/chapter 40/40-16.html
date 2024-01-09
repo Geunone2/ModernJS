@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<button>Click me !</button>
+<script>
+    const $button = document.querySelector('button');
+
+    $button.addEventListener('click', function () {
+        console.log('button click');
+
+        $button.removeEventListener('click', arguments.callee);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<div id="foo">Hello</div>
+</body>
+<script>
+    console.log(document.nodeValue);
+
+    const $foo = document.getElementById('foo');
+    console.log($foo.nodeValue);
+
+    const $textnode = $foo.firstChild;
+    console.log($textnode.nodeValue);
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<ul id="fruits">
+    <li id="apple">Apple</li>
+    <li id="banana">Banana</li>
+    <li id="orange">Orange</li>
+</ul>
+<script>
+    const $fruits = document.getElementById('furits');
+
+    $fruits.addEventListener('click', e => {
+        console.log(`이벤트 타깃: ${e.eventPhase}`);
+        console.log(`이벤트 타깃: ${e.target}`);
+        console.log(`이벤트 타깃: ${e.currentTarget}`);
+    });
+</script>
+
+</body>
+</html>

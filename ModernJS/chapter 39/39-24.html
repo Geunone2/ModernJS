@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<ul id="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+</ul>
+</body>
+<script>
+    const $fruits = document.getElementById('fruits');
+
+    const {childNodes} = $fruits;
+
+    [...childNodes].forEach(childNode => {
+        $fruits.removeChild(childNode);
+    });
+
+    console.log(childNodes);
+</script>
+</html>

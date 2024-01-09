@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<div id="foo">Hello</div>
+</body>
+<script>
+    const $foo = document.getElementById('foo');
+
+    console.log($foo.textContent === $foo.lastChild.firstChild.nodeValue);
+</script>
+</html>

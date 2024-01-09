@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<button>Click me !</button>
+<script>
+    const $button = document.querySelector('button');
+
+    // 무명 함수를 이벤트 핸들러로 등록하면 제거할 수 없음
+    $button.addEventListener('click', () => console.log('button click'));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<body>
+<button>Click me!</button>
+<script>
+    const $button = document.querySelector('button');
+
+    // 첫 번째로 바인딩된 이벤트 핸들러는 두 번째 바인딩된 이벤트 핸들러에 의해 재할당되어 실행x
+    $button.onclick = function () {
+        console.log('Button click 1');
+    };
+
+    // 두 번째로 바인딩된 이벤트 핸들러
+    $button.onclick = function () {
+        console.log('Button click 2');
+    };
+</script>
+</body>
+</html>
